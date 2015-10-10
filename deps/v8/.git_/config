@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[remote "origin"]
+	url = https://github.com/v8/v8.git
+	fetch = +refs/heads/4.8.33:refs/remotes/origin/4.8.33
+[branch "4.8.33"]
+	remote = origin
+	merge = refs/heads/4.8.33
