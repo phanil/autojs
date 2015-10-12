@@ -74,7 +74,8 @@ if __name__ == "__main__":
 			if os.path.exists(dst):
 				os.system("git rm -r -f %s"%(dst))
 			if os.path.exists(dst):
-				shutil.rmtree(dst)
+				#shutil.rmtree(dst)
+				os.removedirs(dst)
 	except Exception as e:
 		print "Error: Delete Repo @ %s"%(e)
 		sys.exit()
